@@ -12,7 +12,7 @@ keywords = st.text_input("Custom Keywords (comma-separated)", value=presets[pres
 
 # Manual Refresh Button
 if st.button("Update Searches"):
-    st.experimental_rerun()
+    st.rerun()  # Updated to st.rerun() instead of st.experimental_rerun()
 
 # Search Panels
 st.header("Search Results")
